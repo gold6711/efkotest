@@ -4,8 +4,8 @@ module.exports = function(app) {
   **/
   app.get('/', function(req, res) {
     res.render('index', {
-      title: 'Your page title',
-      message: 'Your header message',
+      title: 'Мое тестовое задание',
+      message: 'Мое тестовое задание',
       userName: (req.user) ? req.user.username : undefined,
       flashMessage: req.flash('flashMessage')
     });
